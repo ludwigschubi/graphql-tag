@@ -1,6 +1,6 @@
 export default {
   entry: 'src/index.js',
-  dest: 'lib/graphql-tag.umd.js',
+  dest: 'lib/webql-tag.umd.js',
   format: 'umd',
   sourceMap: true,
   moduleName: 'webql-tag',

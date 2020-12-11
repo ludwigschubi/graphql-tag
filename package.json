@@ -2,18 +2,18 @@
   "name": "webql-tag",
   "version": "2.11.0",
   "description": "A JavaScript template literal tag that parses GraphQL queries",
-  "main": "./lib/graphql-tag.umd.js",
+  "main": "./lib/webql-tag.umd.js",
   "module": "./src/index.js",
   "jsnext:main": "./src/index.js",
   "sideEffects": false,
   "scripts": {
-    "bundle": "rollup -c && cp src/index.js.flow lib/graphql-tag.umd.js.flow",
+    "bundle": "rollup -c && cp src/index.js.flow lib/webql-tag.umd.js.flow",
     "test": "mocha test/graphql.js",
     "prepublish": "npm run bundle"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apollographql/graphql-tag.git"
+    "url": "git+https://github.com/apollographql/webql-tag.git"
   },
   "author": "",
   "license": "MIT",
