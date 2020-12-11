@@ -156,7 +156,7 @@ We now emit warnings if you use the same name for two different fragments.
 You can disable this with:
 
 ```js
-import { disableFragmentWarnings } from 'graphql-tag';
+import { disableFragmentWarnings } from 'webql-tag';
 
 disableFragmentWarnings();
 ```
@@ -170,7 +170,7 @@ Releasing 0.1.17 as 1.0.0 in order to be explicit about Semantic Versioning.
 * Allow embedding fragments inside document strings, as in
 
 ```js
-import gql from 'graphql-tag';
+import gql from 'webql-tag';
 
 const fragment = gql`
   fragment Foo on Bar {

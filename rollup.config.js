@@ -3,7 +3,7 @@ export default {
   dest: 'lib/graphql-tag.umd.js',
   format: 'umd',
   sourceMap: true,
-  moduleName: 'graphql-tag',
+  moduleName: 'webql-tag',
   onwarn
 };
 

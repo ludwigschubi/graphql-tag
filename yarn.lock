@@ -734,11 +734,6 @@ globals@^9.0.0:
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
 
-graphql@^15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.0.0.tgz#042a5eb5e2506a2e2111ce41eb446a8e570b8be9"
-  integrity sha512-ZyVO1xIF9F+4cxfkdhOJINM+51B06Friuv4M66W7HzUOeFd+vNzUn4vtswYINPi6sysjf1M2Ri/rwZALqgwbaQ==
-
 growl@1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.9.2.tgz#0ea7743715db8d8de2c5ede1775e1b45ac85c02f"
@@ -1018,6 +1013,11 @@ os-tmpdir@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
+
+own-namespace@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/own-namespace/-/own-namespace-0.4.3.tgz#e9123d73c734d957b3e305d03305ed8476f90321"
+  integrity sha512-Z2NUxxvMZQRlNcTO3Vvdw2J9392dgvSWY/hwJPB5n0ehyup0FVirfoK7RrI8oSDlaqjGbNPgX/2JHMepX1hUew==
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
@@ -1299,6 +1299,13 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+webql-js@^15.0.0:
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/webql-js/-/webql-js-15.4.1.tgz#8ddd415da2fd9e3f2cd4da7806605cb27493790f"
+  integrity sha512-PpOpsgmDzseA4UHnPLEo7G9GdXzVuHoAcSDV6NqjjYm9EAFL3tlMkvDBP1FcT4+Fh0lDXKZYqJx0Oi0oY3yjmg==
+  dependencies:
+    own-namespace "^0.4.3"
 
 wordwrap@~1.0.0:
   version "1.0.0"

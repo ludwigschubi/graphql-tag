@@ -15,7 +15,7 @@ Helpful utilities for parsing GraphQL queries. Includes:
 The `gql` template literal tag can be used to concisely write a GraphQL query that is parsed into a standard GraphQL AST. It is the recommended method for passing queries to [Apollo Client](https://github.com/apollographql/apollo-client). While it is primarily built for Apollo Client, it generates a generic GraphQL AST which can be used by any GraphQL client.
 
 ```js
-import gql from 'graphql-tag';
+import gql from 'webql-tag';
 
 const query = gql`
   {
@@ -63,7 +63,7 @@ The above query now contains the following syntax tree.
 The `gql` tag can also be used to define reusable fragments, which can easily be added to queries or other fragments.
 
 ```js
-import gql from 'graphql-tag';
+import gql from 'webql-tag';
 
 const userFragment = gql`
   fragment User_user on User {
@@ -176,7 +176,7 @@ _**Example webpack configuration**_
     {
       test: /\.(graphql|gql)$/,
       exclude: /node_modules/,
-      loader: 'graphql-tag/loader'
+      loader: 'webql-tag/loader'
     }
   ],
   ...
@@ -198,7 +198,7 @@ Testing environments that don't support Webpack require additional configuration
 This package will emit a warning if you have multiple fragments of the same name. You can disable this with:
 
 ```js
-import { disableFragmentWarnings } from 'graphql-tag';
+import { disableFragmentWarnings } from 'webql-tag';
 
 disableFragmentWarnings()
 ```
@@ -210,7 +210,7 @@ This package exports an `experimentalFragmentVariables` flag that allows you to 
 You can enable / disable this with:
 
 ```js
-import { enableExperimentalFragmentVariables, disableExperimentalFragmentVariables } from 'graphql-tag';
+import { enableExperimentalFragmentVariables, disableExperimentalFragmentVariables } from 'webql-tag';
 ```
 
 Enabling this feature allows you declare documents of the form

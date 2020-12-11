@@ -1,4 +1,4 @@
-var parser = require('graphql/language/parser');
+var parser = require('webql-js/language/parser');
 
 var parse = parser.parse;
 
@@ -46,7 +46,7 @@ function processFragments(ast) {
         // the same name as one previously registered. So, we tell them about it.
         if (printFragmentWarnings) {
           console.warn("Warning: fragment with name " + fragmentName + " already exists.\n"
-            + "graphql-tag enforces all fragment names across your application to be unique; read more about\n"
+            + "webql-tag enforces all fragment names across your application to be unique; read more about\n"
             + "this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names");
         }
 

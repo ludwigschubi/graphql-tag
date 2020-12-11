@@ -27,8 +27,8 @@ function expandImports(source, doc) {
   `;
 
   lines.some((line) => {
-    if (line[0] === '#' && line.slice(1).split(' ')[0] === 'import') {
-      const importFile = line.slice(1).split(' ')[1];
+    if (line[0] === '#' && line.slice(2).split(' ')[0] === 'import') {
+      const importFile = line.slice(2).split(' ')[1];
       const parseDocument = `require(${importFile})`;
       const appendDef = `doc.definitions = doc.definitions.concat(unique(${parseDocument}.definitions));`;
       outputCode += appendDef + os.EOL;

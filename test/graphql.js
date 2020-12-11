@@ -183,7 +183,7 @@ describe('gql', () => {
   });
 
   it('correctly imports other files through the webpack loader', () => {
-    const query = `#import "./fragment_definition.graphql"
+    const query = `# import "./fragment_definition.graphql"
       query {
         author {
           ...authorDetails
@@ -209,7 +209,7 @@ describe('gql', () => {
   });
 
   it('tracks fragment dependencies across fragments loaded via the webpack loader', () => {
-    const query = `#import "./fragment_definition.graphql"
+    const query = `# import "./fragment_definition.graphql"
       fragment F111 on F {
         ...F222
       }
@@ -251,7 +251,7 @@ describe('gql', () => {
 
   it('does not complain when presented with normal comments', (done) => {
     assert.doesNotThrow(() => {
-      const query = `#normal comment
+      const query = `# normal comment
         query {
           author {
             ...authorDetails
@@ -401,12 +401,12 @@ describe('gql', () => {
         switch (path) {
         case './friends.graphql':
           return load(test_require, [
-            '#import "./person.graphql"',
+            '# import "./person.graphql"',
             'fragment friends on Hero { friends { ...person } }',
           ].join('\n'));
         case './enemies.graphql':
           return load(test_require, [
-            '#import "./person.graphql"',
+            '# import "./person.graphql"',
             'fragment enemies on Hero { enemies { ...person } }',
           ].join('\n'));
         case './person.graphql':
@@ -417,8 +417,8 @@ describe('gql', () => {
       };
 
       const result = load(test_require, [
-        '#import "./friends.graphql"',
-        '#import "./enemies.graphql"',
+        '# import "./friends.graphql"',
+        '# import "./enemies.graphql"',
         'query { hero { ...friends ...enemies } }',
       ].join('\n'));
 
